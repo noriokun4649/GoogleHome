@@ -11,7 +11,7 @@ const client = new twitter({//TwitterAPIの各種APIKEY
     access_token_key: 'xxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxx',
     access_token_secret: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
 });
-client.stream('statuses/filter', { follow: '216184660' },//フィルター対象今回はゆれくるコール
+client.stream('statuses/filter', { follow: '382517138' },//フィルター対象今回はゆれくるコール
     function (stream) {
         stream.on('data', function (tweet) {
             let para = (tweet.text).split(" ");
